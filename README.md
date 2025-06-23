@@ -55,3 +55,4 @@ afl-fuzz -i seeds_empty -o out--seeds_empty -- ./fuzz--simple_bgp
 
 - `seeds/`: Contains at least one file with a valid `imsg`.
 - `seeds_empty/`: Contains minimal/random input (e.g., a single `a` character).
+- `(gdb) p imsgbuf->w.rbufs->bufs->tqh_first->buf` used to print the contents in an imsg buffer with GDB
